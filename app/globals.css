@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-montserrat);
+
+  /* Brand colors — café palette */
+  --color-rust-50: #fdf4f1;
+  --color-rust-100: #fbe4dc;
+  --color-rust-200: #f7c3b3;
+  --color-rust-300: #ef987f;
+  --color-rust-400: #e16a4b;
+  --color-rust-500: #c23519;
+  --color-rust-600: #a82b14;
+  --color-rust-700: #872312;
+  --color-rust-800: #6f1f13;
+  --color-rust-900: #5c1c13;
+
+  --color-coffee-50: #faf6f1;
+  --color-coffee-100: #f1e7d6;
+  --color-coffee-200: #e8d7b9;
+  --color-coffee-300: #d4b896;
+  --color-coffee-400: #b68e6b;
+  --color-coffee-500: #9a7250;
+  --color-coffee-600: #715138;
+  --color-coffee-700: #5a3f2a;
+  --color-coffee-800: #502e07;
+  --color-coffee-900: #2e1a04;
+
+  --color-cream: #fdfaf4;
+  --color-mustard: #a86500;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+}
