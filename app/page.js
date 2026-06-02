@@ -3,6 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
+      <PromoBanner />
       <Header />
       <main className="flex-1">
         <Hero />
@@ -18,6 +19,31 @@ export default function Home() {
       </main>
       <Footer />
     </>
+  );
+}
+
+function PromoBanner() {
+  return (
+    <a
+      href="https://xperigift.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group block bg-coffee-900 text-cream transition-colors hover:bg-coffee-800"
+    >
+      <div className="mx-auto flex max-w-7xl items-center justify-center gap-2 px-6 py-2.5 text-center text-xs font-medium sm:text-sm">
+        <span className="inline-flex items-center gap-1.5">
+          <SparkleIcon />
+          <span className="font-bold tracking-wide text-rust-300">xperigift</span>
+        </span>
+        <span className="hidden text-cream/70 sm:inline">·</span>
+        <span className="hidden text-cream/90 sm:inline">Revenue growth service</span>
+        <span className="text-cream/70">·</span>
+        <span className="inline-flex items-center gap-1 font-semibold text-rust-300 group-hover:text-rust-200">
+          Book your audit call
+          <ArrowRightIcon />
+        </span>
+      </div>
+    </a>
   );
 }
 
@@ -792,6 +818,28 @@ function PlusIcon() {
   return (
     <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
       <path strokeLinecap="round" d="M12 5v14M5 12h14" />
+    </svg>
+  );
+}
+
+function SparkleIcon() {
+  return (
+    <svg className="h-3.5 w-3.5 text-rust-300" viewBox="0 0 20 20" fill="currentColor">
+      <path d="M10 1l1.8 5.7L17.5 8 11.8 9.8 10 15.5 8.2 9.8 2.5 8l5.7-1.3z" />
+    </svg>
+  );
+}
+
+function ArrowRightIcon() {
+  return (
+    <svg
+      className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5"
+      viewBox="0 0 20 20"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.5"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 10h10M11 6l4 4-4 4" />
     </svg>
   );
 }
