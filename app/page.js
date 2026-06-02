@@ -116,18 +116,15 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="relative">
-          <div className="absolute -inset-4 -z-10 rounded-3xl bg-gradient-to-br from-rust-200 to-coffee-200 blur-2xl opacity-50" />
-          <div className="overflow-hidden rounded-3xl border border-white/60 bg-white shadow-2xl">
-            <Image
-              src="/img/hero.png"
-              alt="Happy small business owners using The Gift Card Cafe"
-              width={800}
-              height={600}
-              className="h-full w-full object-cover"
-              priority
-            />
-          </div>
+        <div className="relative mx-auto w-full max-w-md md:max-w-none">
+          <Image
+            src="/img/hero-woman.png"
+            alt="Small business owner boosting sales with The Gift Card Cafe"
+            width={1086}
+            height={1448}
+            className="h-auto w-full"
+            priority
+          />
         </div>
       </div>
     </section>
