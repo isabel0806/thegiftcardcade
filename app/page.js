@@ -57,7 +57,7 @@ function Hero() {
     <section className="relative overflow-hidden">
       <div className="absolute inset-0 -z-10 bg-gradient-to-br from-cream via-coffee-50 to-coffee-100" />
       <div className="absolute -right-32 -top-32 -z-10 h-96 w-96 rounded-full bg-rust-100 blur-3xl opacity-60" />
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 md:grid-cols-2 md:items-center md:py-28 lg:py-32">
+      <div className="mx-auto grid max-w-7xl gap-12 px-6 pt-8 pb-20 md:grid-cols-2 md:items-center md:pt-12 md:pb-28 lg:pt-16 lg:pb-32">
         <div>
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-rust-200 bg-white/60 px-4 py-1.5 text-xs font-semibold text-rust-700">
             <span className="h-2 w-2 rounded-full bg-rust-500 animate-pulse" />
