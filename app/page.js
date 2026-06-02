@@ -120,8 +120,8 @@ function Hero() {
           <Image
             src="/img/hero-woman.png"
             alt="Small business owner boosting sales with The Gift Card Cafe"
-            width={1086}
-            height={1448}
+            width={1792}
+            height={2400}
             className="h-auto w-full"
             priority
           />
